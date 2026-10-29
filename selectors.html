@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Practice</title>
+   <style>
+    /*write your CSS rules here*/
+
+    /* 1. Element (type) selector */
+    p {
+        color: green;
+    }
+
+    /* 2. Class selector */
+    .item {
+        color: saddlebrown;
+    }
+
+    /* 3. ID selector */
+    #Title {
+        color: royalblue;
+    }
+
+    /* 4. Group selector */
+    h2, a {
+        color: teal;
+    }
+
+    /* 5. Descendant selector */
+    #Menu li {
+        font-style: italic;
+    }
+
+    /* 6. Element and class combined selector */
+    p.special {
+        background-color: lightyellow;
+    }
+
+    /* 7. Pseudo-class selector */
+    a:hover {
+        color: crimson;
+        text-decoration: underline;
+    }
+   </style>
+</head>
+<body>
+
+    <h1 id="Title">Corner Bakery</h1>
+    <p class="tagline">Fresh bread and pastries every day.</p>
+    <div id="Menu">
+        <h2>Menu</h2>
+        <ul>
+            <li class="item">Pandesal</li>
+            <li class="item Special">Ube cheese Roll</li>
+            <li class="item">Banana Bread</li>
+        </ul>
+    </div>
+    
+    <div id="about">
+        <h2>About Us</h2>
+        <p>We Bake in small batches daily.</p>
+        <p id="note" class="special">Our Ube Rolls are made from scratch</p>
+        <a href="http://example.com">Visit Our page</a>
+    </div>
+</body>
+</html>
