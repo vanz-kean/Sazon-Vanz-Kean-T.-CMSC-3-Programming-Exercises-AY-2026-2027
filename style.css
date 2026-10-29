@@ -1,0 +1,66 @@
+/* EXTERNAL CSS - flat and simple, green tone */
+/* Kept from internal/inline CSS: blue name, yellow fun fact, red YouTube link */
+
+/* Element selectors */
+body {
+    font-size: 16px;
+    background-color: #f1f6f2 !important;   /* overrides internal blue-gray background */
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+b,
+strong {
+    color: #2e5d34;
+}
+
+em,
+i {
+    color: #4a7c59;
+}
+
+/* ID selectors */
+#interests {
+    background-color: #e3efe5;
+    border-left-color: #4a7c59 !important;
+}
+
+#favorite {
+    color: #2e5d34 !important;              /* overrides inline blue */
+    text-decoration: none !important;       /* overrides inline underline */
+    border-bottom: 2px solid #4a7c59;
+}
+
+/* Class selectors */
+.intro {
+    border-left-color: #4a7c59 !important;  /* overrides internal blue border */
+}
+
+.divider {
+    border-top-color: #4a7c59 !important;   /* overrides internal blue line */
+}
+
+.external {
+    color: #2e5d34;                         /* Facebook link; YouTube keeps its inline red */
+    text-decoration: none;
+    border-bottom: 1px solid #4a7c59;
+}
+
+/* Pseudo-class selector */
+.external:hover {
+    background-color: #e3efe5;
+}
+
+/* Attribute selector */
+a[href*="facebook"] {
+    font-weight: bold;
+}
+
+/* Pseudo-element selector */
+::selection {
+    background-color: #c8dfcc;
+    color: #1f3d25;
+}
